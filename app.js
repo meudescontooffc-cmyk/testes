@@ -474,7 +474,7 @@ function renderShell(pageContentHtml, pageTitle) {
           <span style="font-weight:700;">Menu</span>
           <button class="sidebar-close" data-action="closedrawer">✕</button>
         </div>
-        <nav style="display:flex;flex-direction:column;gap:2px;flex:1;">${navItemsHtml(true)}</nav>
+        <nav class="sidebar-nav" style="flex:1;">${navItemsHtml(true)}</nav>
         <button class="btn btn-ghost btn-block" data-action="logout" style="border-color:#3a392f;color:var(--sidebar-text);margin-top:14px;">Sair (${esc(state.currentUser.name)})</button>
       </div>
     </div>` : ""}
